@@ -1,0 +1,71 @@
+button {
+    background-color: rgb(83, 121, 226);
+    color: white;
+    font-size: 2em;
+    border-radius: 10%;
+    border: gray 1px solid;
+}
+button:hover {
+    background-color: darkblue;
+}
+#elephant {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 300px;
+    background-color: rgb(211, 211, 211);
+    text-align: left;
+} 
+   
+#elephant img {
+    width: 100%;
+    height: 50%
+    /* margin: 0 auto; */
+}
+
+#elephant h2 {
+    border-bottom: .25px solid black;
+    margin: 0;
+    padding: .5em;
+}
+.gifs {
+    display: flex;
+    justify-content: space-between;
+}
+.gif {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 2px solid black;
+    background-color: coral;
+    z-index: auto;
+}
+
+.gif-wrapper {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+}
+
+.gif1 {
+    background-image: url(https://media.giphy.com/media/jQtwDDL5Cl530vM0Yt/giphy.gif);
+}
+.gif2 {
+    background-image: url(https://media.giphy.com/media/AANqYGD9LVsw8/giphy.gif);
+}
+.gif3 {
+    background-image: url(https://media.giphy.com/media/Za9AyHzhnae5kAercA/giphy.gif);
+}
+.caption {
+    font-size: 4em;
+    color: cornsilk;
+    position: absolute;
+    top: 150px;
+    transition: top 1s, visibility .5s;
+    visibility: hidden;
+}
+
+.gif:hover .caption {
+    top: 0;
+    visibility: visible;
+}
